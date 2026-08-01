@@ -1,0 +1,33 @@
+STRING OPERATIONSS :
+
+
+import java.util.Scanner;
+class Main
+
+{
+	public static void main(String args[])
+	{
+		StringBuffer sb=new StringBuffer();
+		sb.append("java code");
+		System.out.println(sb.length());
+		sb.insert(5,"JUNK");
+		System.out.println(sb.indexOf("cod"));
+		System.out.println(sb.lastIndexOf("a"));
+		System.out.println(sb.replace(0,3,"python"));
+		System.out.println(sb.substring(0));
+		System.out.println(sb.substring(0,6));
+		System.out.println(sb.delete(7,9));
+		System.out.println(sb.reverse());
+	}
+
+}
+
+OUTPUT  :
+9
+9
+3
+pythona JUNKcode
+pythona JUNKcode
+python
+pythonaUNKcode
+edocKNUanohtyp
