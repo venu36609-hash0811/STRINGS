@@ -1,0 +1,28 @@
+class Student
+{
+    int rollno;
+    String name;
+    public void insertRecord(int n,String m)
+    {
+        this.rollno=n;
+        this.name=m;
+    }
+    public void displayInformation()
+    {
+        System.out.println(this.rollno+" "+this.name+" ");
+    }
+    public static void main(String args[])
+    {
+    
+    Student s1=new Student();
+    Student s2=new Student();
+    s1.insertRecord(123,"ajay");
+    s2.insertRecord(234,"hari");
+    s1.displayInformation();
+    s2.displayInformation();
+    }
+}
+
+OUTPUT   :
+123 ajay 
+234 hari
