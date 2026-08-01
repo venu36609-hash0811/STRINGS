@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.util.Arrays;
+class Main
+{
+	public static void main(String args[])
+	{
+		String s1="Hello";
+        String s2="ECE";
+        System.out.println(s1+s2);//does not change s1  
+        System.out.println(s1);//doesnot change s1
+        System.out.println(s1.concat(s2));//changes s1
+        s1=s1.concat(s2);
+        System.out.println(s1);  //changes s1 
+	}
+
+}
+
+  OUTPUT            :
+HelloECE
+Hello
+HelloECE
+HelloECE
