@@ -1,0 +1,30 @@
+Palindrome in a string  :
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+
+        String[] words = str.split(" "); // Split sentence into words
+
+        for (int i = 0; i < words.length; i++) {
+            String word = words[i];
+            String reversed = "";
+
+            // Reverse the word manually
+            for (int j = word.length() - 1; j >= 0; j--) {
+                reversed += word.charAt(j);
+            }
+            if(reversed.equals(word))
+            {
+                System.out.println(word+" is a palindrome");
+            }
+            else {
+                continue;
+            }
+        }
+           
+    }
+}
