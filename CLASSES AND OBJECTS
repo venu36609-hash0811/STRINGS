@@ -1,0 +1,25 @@
+class Student{
+	int id;
+	String name;
+	double mark;
+	Student(int id,String name,double mark)
+	{
+		this.id=id;
+		this.name=name;
+		this.mark=mark;
+	}
+	public void display()
+	{
+		System.out.println(id+" "+name+" "+mark);
+	}
+	public static void main(String args[])
+	{
+		Student s1=new Student(100,"deepak",99.95);
+		Student s2=new Student(143,"Mary",99.95);
+		s1.display();
+		s2.display();
+	}
+}
+OUTPUT   :
+100 deepak 99.95
+143 Mary 99.95
